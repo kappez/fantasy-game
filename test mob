@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Header 1</h1>
+
+<p>Här kan jag skriva text</p>
+
+<button onclick="functionTest();  ">Try it</button>
+
+<script>
+function functionTest() {
+  alert('Hello');
+}
+</script>
+
+</body>
+</html>
+console.log("Hej");

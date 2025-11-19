@@ -1,0 +1,157 @@
+body {
+  background-color: #2F4B26;
+}
+
+.box {
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  color: #9DB5B2;
+  margin-left: 20px;
+}
+
+p {
+  color: #000000;
+  margin-left: 20px;
+
+}
+
+button {
+  background-color: #725752;
+  border: none;
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
+  padding: 15px 32px;
+  opacity: 1;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {opacity: 0.6}
+
+.infoMenuBar {
+  background-color: #DDD2D0;
+  display: flex;
+  flex-direction: column; /* stack stats and bars vertically */
+  gap: 5px;
+  color: white;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;       /* stats items in a row */
+  gap: 10px;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column; /* stack bars vertically */
+  gap: 5px;
+}
+
+.buttonmenu {
+  background-color: #DDD2D0;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.leftColumn {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentleft {
+  background-color: #DDD2D0;
+  width: 100%;
+    height: 100%;
+}
+
+#contentTextLeft2 {
+  background-color: #DDD2D0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.shopItem {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 5px;
+  width: 200px;
+  border: 2px dashed #9DB5B2;
+}
+
+.contentright {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contentright img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  background-color: #9DB5B2;
+  color: #000000;
+  text-align: center;
+  padding-top: 1%;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+}
+
+progress.exp {
+  accent-color: rgb(0, 128, 0);
+}
+
+progress.hp {
+  accent-color: rgb(255, 0, 0);
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
