@@ -9,12 +9,14 @@ body {
 h1 {
   color: #9DB5B2;
   margin-left: 20px;
+  font-family: "Roboto Black";
+  text-transform: uppercase;
 }
 
 p {
   color: #000000;
-  margin-left: 20px;
-
+  /*margin-left: 20px;*/
+  font-family: "Roboto";
 }
 
 button {
@@ -32,6 +34,13 @@ button {
 
 button:hover {opacity: 0.6}
 
+button:disabled {
+  background-color: #888888; /* grey background */
+  color: #cccccc;            /* lighter text */
+  cursor: not-allowed;       /* show the “not-allowed” cursor */
+  opacity: 0.6;              /* optional, make it look faded */
+}
+
 .infoMenuBar {
   background-color: #DDD2D0;
   display: flex;
@@ -44,6 +53,7 @@ button:hover {opacity: 0.6}
   display: flex;
   flex-wrap: wrap;       /* stats items in a row */
   gap: 10px;
+  padding-left: 1%;
 }
 
 .bars {
@@ -57,6 +67,11 @@ button:hover {opacity: 0.6}
   color: rgb(0, 0, 0);
   display: flex;
   flex-direction: row;
+}
+
+.buttonDiv {
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
@@ -74,7 +89,8 @@ button:hover {opacity: 0.6}
 .contentleft {
   background-color: #DDD2D0;
   width: 100%;
-    height: 100%;
+  height: 100%;
+  padding-left: 2%;
 }
 
 #contentTextLeft2 {
@@ -93,12 +109,34 @@ button:hover {opacity: 0.6}
   border: 2px dashed #9DB5B2;
 }
 
+.monsterEntry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  width: 200px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.contentleftText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+  margin-right:50px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+
 .contentright {
   width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  margin-left: 1%;
 }
 
 .contentright img {
@@ -132,12 +170,12 @@ progress.hp {
   accent-color: rgb(255, 0, 0);
 }
 
-.alert {
+/*.alert {
   padding: 20px;
-  background-color: #f44336; /* Red */
+  background-color: #f44336; Red 
   color: white;
   margin-bottom: 15px;
-}
+}/*
 
 /* The close button */
 .closebtn {
@@ -155,3 +193,12 @@ progress.hp {
 .closebtn:hover {
   color: black;
 }
+
+.monsterImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+    border: 3px solid #DDD2D0;
+}
+
+.img { padding: 100px; }
